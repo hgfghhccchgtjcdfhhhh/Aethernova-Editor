@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Aethernova Editor</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+    <div id="game-container">
+
+        <!-- Left Side: The "Aethernova Editor" -->
+        <div id="editor-panel">
+            <h2>Aethernova Editor</h2>
+
+            <textarea id="html-editor">
+<h1>Welcome to Aethernova</h1>
+<p>The world is unstable. Fix the HTML to restore it.</p>
+            </textarea>
+
+            <textarea id="css-editor">
+body {
+    background: #0f0f18;
+    color: white;
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1 {
+    color: #6cb6ff;
+    text-shadow: 0 0 8px #6cb6ff;
+}
+            </textarea>
+
+            <button id="apply-code">Apply Code</button>
+        </div>
+
+        <!-- Right Side: The "World Viewport" -->
+        <div id="world-panel">
+            <h2>World Viewport</h2>
+            <iframe id="world-frame"></iframe>
+        </div>
+
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
